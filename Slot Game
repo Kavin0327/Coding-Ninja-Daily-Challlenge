@@ -1,4 +1,4 @@
-Problem statement
+Problem statement   
 You’re given a slot machine with four slots where each slot will contain the color Red(R), Yellow(Y), Green(G), Blue(B), respectively. 
 You don’t know the colors of this slot beforehand. You have to guess the colors. When you guess the correct color for the correct slot, you get a perfect hit, and you get 2 points, 
 but if you guess a color that exists in the machine but is in the wrong slot, you get a pseudo hit, and you get 1 point.
