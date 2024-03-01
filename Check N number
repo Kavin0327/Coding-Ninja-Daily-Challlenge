@@ -1,0 +1,65 @@
+ Check N numbers      Moderate          Average time to solve is 10m
+
+Problem statement
+
+Given an array ‘arr’ of ‘N’ integers, make a number from those set of all integers from the ‘arr’ such that
+if number of ‘ith’ set bits are greater than the number of ‘ith’ unset bits then make that ‘ith’ bit of the new number as set bi otherwise make that ‘ith’ bit as unset bit.
+For Example:
+There are three numbers, say 8, 5 and 10. 
+8 can be written as      1 0 0 0 .
+5 can be written as      0 1 0 1.
+10 can be written as     1 0 1 0. 
+positions of the bits as i j k l.
+So we can see majority bit at ith position are set bits so ith bit will be 1. Similarly for positions of j, k and l are set as 0 0 0 respectively.
+So the number generated is 1 0 0 0 i.e. 8. 
+
+Sample Input 1:
+
+2
+3
+8 4 2
+3
+8 8 2
+
+Sample Output 1:
+
+0
+8
+
+Explanation for Sample Test Case 1:
+
+Test Case 1 :
+Numbers can be represented in bits as:
+1 0 0 0
+0 1 0 0
+0 0 1 0
+i j k l
+Number of set bits for ith index is 1. Number of unset bits for ith index is 2. 
+Therefore the number of unset bits for ith index is greater than the number of set bits for ith index. So ith bit for the number will be 0.
+Similarly for jth, kth and lth bit will be 0. As the number of unset bits is greater than the number of set bits. Answer will be 0 0 0 0 which represents number 0.
+
+Test Case 2:
+Numbers can be represented in bits as
+1 0 0 0
+1 0 0 0
+0 0 1 0
+i j k l
+
+Number of set bits for ith index is 2. Number of unset bits for ith index is 1. 
+Therefore the number of set bits for ith index is greater than the number of unset bits for ith index. So ith bit for the number will be 1.
+Similarly for jth, kth and lth bit will be 0. As the number of unset bits is greater than the number of set bits. Answer will be 1 0 0 0 which represents the number 8.
+
+Sample Input 2:
+
+2
+5
+1 2 3 4 5
+4
+6 7 8 9
+
+Sample Output 2:
+
+1
+0
+
+
